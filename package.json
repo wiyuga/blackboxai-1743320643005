@@ -1,0 +1,12 @@
+{
+  "name": "uber-clone",
+  "version": "1.0.0",
+  "description": "Uber website clone",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css",
+    "watch-css": "tailwindcss build src/styles.css -o public/styles.css --watch"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.0"
+  }
+}
