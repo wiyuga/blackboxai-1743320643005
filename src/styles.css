@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles from index.html */
+.hero-bg {
+  background-image: url('https://images.pexels.com/photos/1838640/pexels-photo-1838640.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.nav-transparent {
+  background-color: rgba(0,0,0,0.5);
+}
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .desktop-menu { display: none; }
+  .mobile-menu { display: block; }
+  .hero-bg { height: 60vh; }
+  .hero-bg h1 { font-size: 2.5rem; }
+  .hero-bg p { font-size: 1rem; }
+}
