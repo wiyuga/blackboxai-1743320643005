@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Clone</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full nav-transparent text-white z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-2xl font-bold">UBER</a>
+                <div class="desktop-menu hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-gray-300">Ride</a>
+                    <a href="#" class="hover:text-gray-300">Drive</a>
+                    <a href="#" class="hover:text-gray-300">Business</a>
+                    <a href="#" class="hover:text-gray-300">More</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:text-gray-300"><i class="fas fa-globe"></i> EN</a>
+                <a href="#" class="hover:text-gray-300"><i class="fas fa-question-circle"></i> Help</a>
+                <a href="#" class="hover:text-gray-300">Log in</a>
+                <button class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">Sign up</button>
+            </div>
+            <div class="mobile-menu md:hidden">
+                <button id="menu-toggle" class="text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-nav" class="hidden bg-black w-full absolute left-0 top-16 p-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="hover:text-gray-300">Ride</a>
+                <a href="#" class="hover:text-gray-300">Drive</a>
+                <a href="#" class="hover:text-gray-300">Business</a>
+                <a href="#" class="hover:text-gray-300">More</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg flex items-center pt-20">
+        <div class="container mx-auto px-6 text-white">
+            <h1 class="text-5xl font-bold mb-6">Get in the driver's seat and get paid</h1>
+            <p class="text-xl mb-8">Drive on the platform with the largest network of active riders.</p>
+            <button class="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 mr-4">Sign up to drive</button>
+            <button class="bg-white text-black px-6 py-3 rounded-md hover:bg-gray-200">Learn more about driving and delivering</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Ways to earn with Uber</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.pexels.com/photos/6272/road-free-urban-street.jpg" alt="Ride" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Drive when you want</h3>
+                    <p class="text-gray-600">Earn on your schedule with flexible hours.</p>
+                </div>
+                <div class="border rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg" alt="Eats" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Deliver food</h3>
+                    <p class="text-gray-600">Deliver with Uber Eats and earn on your schedule.</p>
+                </div>
+                <div class="border rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.pexels.com/photos/2041540/pexels-photo-2041540.jpeg" alt="Freight" class="w-full h-48 object-cover rounded mb-4">
+                    <h3 class="text-xl font-bold mb-2">Freight hauling</h3>
+                    <p class="text-gray-600">Earn more with Uber Freight's shipping platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">About us</a></li>
+                        <li><a href="#" class="hover:underline">Our offerings</a></li>
+                        <li><a href="#" class="hover:underline">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Ride</a></li>
+                        <li><a href="#" class="hover:underline">Drive</a></li>
+                        <li><a href="#" class="hover:underline">Eat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Global citizenship</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Safety</a></li>
+                        <li><a href="#" class="hover:underline">Diversity</a></li>
+                        <li><a href="#" class="hover:underline">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Connect</h3>
+                    <div class="flex space-x-4">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 flex justify-between">
+                <div>© 2023 Uber Clone</div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:underline">Privacy</a>
+                    <a href="#" class="hover:underline">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileNav = document.getElementById('mobile-nav');
+            mobileNav.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileNav = document.getElementById('mobile-nav');
+            const menuToggle = document.getElementById('menu-toggle');
+            
+            if (!mobileNav.contains(event.target) && event.target !== menuToggle) {
+                mobileNav.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
+
